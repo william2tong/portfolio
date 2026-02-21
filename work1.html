@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William Tong Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
+<script type="module">
+    function mouseOver(item) {
+        console.log(item);
+        let label = item.querySelector(".panelLabel");
+        console.log(label)
+        label.style.display = "none";
+    }
+    function mouseLeave(item) {
+        console.log(item);
+        let label = item.querySelector(".panelLabel");
+        console.log(label)
+        label.style.display = "revert";
+    }
+</script>
 
 <body>
     <header>
@@ -40,25 +55,9 @@
             </p>
         </div>
     </div>
-
     <div class="gal">
         <script type="module" src="work.js"></script>
     </div>
 
 
 </body>
-
-<script>
-    function mouseOver(item) {
-        console.log(item);
-        let label = item.querySelector(".panelLabel");
-        console.log(label)
-        label.style.display = "none";
-    }
-    function mouseLeave(item) {
-        console.log(item);
-        let label = item.querySelector(".panelLabel");
-        console.log(label)
-        label.style.display = "revert";
-    }
-</script>

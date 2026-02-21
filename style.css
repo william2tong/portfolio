@@ -15,7 +15,7 @@ body {
 /* Header styles */
 header {
     
-    background:  #1a9cda;
+    background:  #0069a3;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 2rem 10rem 0.5rem 10rem;
@@ -42,6 +42,7 @@ header ul {
   margin: 0;
   padding: 0;
   
+  
 }
 
 
@@ -50,7 +51,7 @@ ul li {
   float: left;
   font-size: 1.3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  
+  border-radius: 12px;
   
 }
 
@@ -64,7 +65,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #0069a3;;
+  background-color: #1a9cda;
 }
 
 /* Main content */
@@ -153,9 +154,16 @@ main {
 .item h3 {
     color: rgb(0, 0, 0);
     font-size: 1.4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     
 }
+
+.item h4 {
+    font-style:italic;
+    font-weight:normal;
+}
+
+
 
 .item p {
     color: #666;
@@ -163,14 +171,21 @@ main {
     line-height: 1.5;
 }
 
-.price {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #955006;
-    background: #f9f7f4;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    display: none;
+.item button {
+    font-family: 'Cambria';
+    font-size: 1.1rem;
+    color:white;
+    background-color: #1a9cda;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+    text-decoration: none;
+}
+
+.item button:hover {
+    color: white;
+    background-color: #0069a3;
+    transition: transform 0.3s ease;
+
 }
 
 .slideout-panel {
@@ -246,7 +261,7 @@ main {
 
 /* Footer */
 footer {
-    background: rgb(0, 54, 129);
+    background: #0069a3;
     color: white;
     text-align: center;
     padding: 4rem;
