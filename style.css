@@ -20,9 +20,11 @@ header {
     text-align: center;
     padding: 2rem 10rem 0.5rem 10rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 10px;
 }
 
 header h1 {
+    font-weight: normal;
     font-size: 3rem;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
