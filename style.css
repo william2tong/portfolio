@@ -1,0 +1,271 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cambria';
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f7f4;
+}
+
+/* Header styles */
+header {
+    
+    background:  #1a9cda;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2rem 10rem 0.5rem 10rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+ul li {
+  
+  float: left;
+  font-size: 1.3rem;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* embed class */
+
+
+.embed {
+
+    position: relative;
+    padding-bottom: 56.25%; /* This sets the aspect ratio (16:9) - adjust as needed */
+    height: 0;
+    overflow: hidden;
+    max-width: 55%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.embed iframe {
+    
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Gallery class */
+.gallery {
+    margin-bottom: 4rem;
+    margin-left: 11.5rem;
+    margin-right: 11.5rem;
+}
+
+.gallery section div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.gallery h2 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.item {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #f0f0f0;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: #f5f5f5;
+    border: 2px dashed #ccc;
+}
+
+.item h3 {
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.item p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #955006;
+    background: #f9f7f4;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: none;
+}
+
+.slideout-panel {
+  position: fixed; /* Fixed position relative to the browser window */
+  top: 34%; /* Adjust top position as needed */
+  left: -15rem; /* Hide the panel off-screen to the right (use 'left' for a left-side panel) */
+  width: 12rem; /* Set the width of the fully extended panel */
+  background-color: #333;
+  color: white;
+  transition: right 0.3s ease; /* Smooth transition for the 'right' property */
+  border-radius: 0 12px 12px 0;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.slideout-panel h3 {
+    margin-bottom: 1rem;
+}
+
+.slideout-panel li {
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+.slideout-panel:hover {
+  left: 0; /* Slide the panel fully into view on hover */
+}
+
+.panelLabel {
+  /* Styling for the small visible part (optional) */
+  position: absolute;
+  right: -12rem; /* Position the label outside the main panel area */
+  top: 0;
+  padding: 5px 10px;
+  background-color: #333;
+  cursor: pointer;
+  
+  border-radius: 12px;
+  
+}
+
+.panelLabel:hover {
+    display: hidden
+}
+
+
+
+
+/* About section */
+.about section {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+    border-left: 5px solid #955006;
+}
+
+.about h2 {
+    color: #035c15;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background: rgb(0, 54, 129);
+    color: white;
+    text-align: center;
+    padding: 4rem;
+    margin-top: 4rem;
+}
+
+footer p {
+    opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .about {
+        padding: 2rem;
+    }
+}
