@@ -44,10 +44,14 @@ header ul {
   
 }
 
+
 ul li {
   
   float: left;
   font-size: 1.3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  
+  
 }
 
 ul li a {
@@ -56,10 +60,11 @@ ul li a {
   text-align: center;
   padding: 0.75rem 2rem;
   text-decoration: none;
+  
 }
 
 ul li a:hover {
-  background-color: #111111;
+  background-color: #0069a3;;
 }
 
 /* Main content */
