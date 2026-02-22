@@ -49,7 +49,7 @@ function parseCsv(data) {
         
         <div class="item">
                     <article>
-                        <img src="${element["image_path"]}" alt="tktk alt text">
+                        <img src="${element["image_path"]}" alt="${element["image_alt_text"]}">
                         <h3>${element["display_title"]}</h3>
                         <h4>${element["publisher"]}, ${element["month"]} ${element["year"]}</h4>
                         ${webButtons}
