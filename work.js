@@ -85,7 +85,12 @@ export function generateSamples(objectPath) {
                                         ${add}
                                     </div>
                                 </section>
-                        </div>`
+                        </div>
+                        <footer>
+                            <p>&copy; 2026 William Tong</p>
+                        </footer>
+                        `
+
             document.querySelector('.gal').insertAdjacentHTML('afterbegin', txt);
 
         })
