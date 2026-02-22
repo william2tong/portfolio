@@ -9,14 +9,14 @@ body {
     font-family: 'Cambria';
     line-height: 1.6;
     color: #333;
-    background-color: #f9f7f4;
+    background-color: #fffcf6;
 }
 
 /* Header styles */
 header {
     
     background:  #0069a3;
-    color: rgb(255, 255, 255);
+    color: #fffcf6;
     text-align: center;
     padding: 2rem 10rem 0.5rem 10rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
