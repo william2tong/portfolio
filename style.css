@@ -322,7 +322,9 @@ footer p {
         padding: 0.5rem 0.75rem;
         margin: 0.25rem 0.25rem 0.25rem 0;
     }
-    
+    .panelLabel {
+        right: -12.5rem;
+    }
     main {
         padding: 1rem;
     }
